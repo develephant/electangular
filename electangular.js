@@ -3,7 +3,7 @@
 > AngularJS Module for Atom Electron
 > (c)2016 develephant @develephant
 > license MIT
-> version 0.0.1
+> version 0.0.2
 */
 'use strict';
 
@@ -101,6 +101,7 @@ angular.module('electangular', [])
     nativeImage: core.nativeImage,
     process: core.process,
     screen: core.screen,
-    shell: core.shell
+    shell: core.shell,
+    ipcRenderer: core.ipcRenderer
   }
 }]);
