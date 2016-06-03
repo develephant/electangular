@@ -36,7 +36,7 @@ The __electangular__ module exposes two public services that can be used in your
 
 |Name|Description|
 |----|-----------|
-|`electron`|A collection of electron functionality for access within Angular JS.|
+|`electron`|A collection of Electron functionality for access within AngularJS.|
 |`ipc`|Facilitates IPC communication between the `main` process and `renderer` process.|
 
 ---
@@ -65,7 +65,7 @@ In the code above, when the `doBeep` method is triggered, Electron will make the
 
 #### API
 
-The supported Electron modules can be found in the `electron` namespace. Refer to the [Electron documentation](http://electron.atom.io/docs/) for more details on the functionality each module provides.
+The supported Electron modules can be found in the `electron` service namespace. Refer to the [Electron documentation](http://electron.atom.io/docs/) for more details on the functionality each module provides.
 
 Because AngularJS runs in the `renderer` process, access to the `main` process is provided via `electron.remote` and all rules for that module apply. ([See `remote` docs.](http://electron.atom.io/docs/api/remote/))
 
@@ -101,7 +101,7 @@ Because AngularJS runs in the `renderer` process, access to the `main` process i
 
 #### `dialog` Module Promises
 
-Some Electron methods, like `dialog.showMessageBox`, use a callback. For Angular we wrap the `$q` service internally to handle this properly using promises. This requires a slightly different signature for the `dialog` methods.
+Some Electron methods, like `dialog.showMessageBox`, use a callback. For Angular, we wrap the `$q` service to handle this properly using promises. This requires a slightly different signature for the `dialog` methods.
 
 ```js
 ...
@@ -135,7 +135,7 @@ Replacing callbacks with Promises is fairly simple:
 ```js
 //Do not include a callback
 dialog.showSaveDialog({ //Set up as usual
-  title: 'Open Me',
+  title: 'Save Me',
   defaultPath: 'home',
   buttonLabel: 'OK'
 }).then((result) => { //Op was successful
@@ -145,7 +145,7 @@ dialog.showSaveDialog({ //Set up as usual
 });
 ```
 
-> __Note:__ `dialog.showErrorBox` does not use a callback or Promise.
+> __Note:__ `dialog.showErrorBox` does not use a callback or `Promise`.
 
 ```js
 ...
