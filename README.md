@@ -290,4 +290,4 @@ function($rootScope) {
 
 ---
 
-&copy;2016 codeponies | code like the wind
+&copy;2016 develephant :elephant:
