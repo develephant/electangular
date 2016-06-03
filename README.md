@@ -281,7 +281,7 @@ function($rootScope) {
         //something else
         break;
       default:
-        //codeponies
+        //whatever
       }
     }
   }
