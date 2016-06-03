@@ -4,11 +4,11 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="electangular : AngularJS Module for Atom Electron">
+    <meta name="description" content="electangular.js : AngularJS Module for Atom Electron">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>electangular</title>
+    <title>electangular.js</title>
   </head>
 
   <body>
@@ -18,7 +18,7 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/develephant/electangular">View on GitHub</a>
 
-          <h1 id="project_title">electangular</h1>
+          <h1 id="project_title">electangular.js</h1>
           <h2 id="project_tagline">AngularJS Module for Atom Electron</h2>
 
             <section id="downloads">
@@ -31,12 +31,9 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h2>
-<a id="angularjs-module-for-atom-electron" class="anchor" href="#angularjs-module-for-atom-electron" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>AngularJS Module for Atom Electron</h2>
+        <p>Use <strong>electangular.js</strong> in your <strong><a href="http://electron.atom.io/">Electron</a></strong> apps to easily access Electron based functionality in your <strong><a href="https://angularjs.org/">AngularJS</a></strong> code.</p>
 
-<p>Use <strong>electangular</strong> in your <strong><a href="http://electron.atom.io/">Electron</a></strong> apps to easily access Electron based functionality in your <strong><a href="https://angularjs.org/">Angular</a></strong> code.</p>
-
-<p>Some additional service methods for IPC functionality are incorporated, as well as "promise" based <code>dialog</code> module methods.</p>
+<p>Some additional service methods for IPC functionality are incorporated, as well as <code>Promise</code> based <code>dialog</code> module methods.</p>
 
 <h3>
 <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h3>
@@ -113,7 +110,7 @@
 
 <p>The supported Electron modules can be found in the <code>electron</code> namespace. Refer to the <a href="http://electron.atom.io/docs/">Electron documentation</a> for more details on the functionality each module provides.</p>
 
-<p>Because Angular JS runs in the <code>renderer</code> process, access to the <code>main</code> process is provided via <code>electron.remote</code> and all rules for that module apply. (<a href="http://electron.atom.io/docs/api/remote/">See <code>remote</code> docs.</a>)</p>
+<p>Because AngularJS runs in the <code>renderer</code> process, access to the <code>main</code> process is provided via <code>electron.remote</code> and all rules for that module apply. (<a href="http://electron.atom.io/docs/api/remote/">See <code>remote</code> docs.</a>)</p>
 
 <h5>
 <a id="electron-class-table" class="anchor" href="#electron-class-table" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Electron Class Table</h5>
@@ -255,7 +252,7 @@
   }
 }]);</pre></div>
 
-<p>The <code>dialog</code> methods use the same signature as shown in the Electron docs, except for the callback. Instead the following methods return a Promise when using <strong>electangular</strong>.</p>
+<p>The <code>dialog</code> methods use the same signature as shown in the Electron docs, except for the callback. Instead the following methods return a <code>Promise</code> when using <strong>electangular</strong>.</p>
 
 <ul>
 <li><code>showOpenDialog</code></li>
@@ -338,7 +335,7 @@
 <span class="pl-smi">app</span>.<span class="pl-en">on</span>(<span class="pl-s"><span class="pl-pds">'</span>ready<span class="pl-pds">'</span></span>, () <span class="pl-k">=&gt;</span> {
   <span class="pl-k">...</span>
 
-  <span class="pl-smi">ipcMain</span>.<span class="pl-en">on</span>(<span class="pl-s"><span class="pl-pds">'</span>electron-msg<span class="pl-pds">'</span></span>, (<span class="pl-smi">msg</span>) <span class="pl-k">=&gt;</span> {
+  <span class="pl-smi">ipcMain</span>.<span class="pl-en">on</span>(<span class="pl-s"><span class="pl-pds">'</span>electron-msg<span class="pl-pds">'</span></span>, (<span class="pl-c1">event</span>, <span class="pl-smi">msg</span>) <span class="pl-k">=&gt;</span> {
     <span class="pl-c">//handle incoming message here</span>
     <span class="pl-en">console</span>.<span class="pl-c1">log</span>(msg);
 
@@ -411,7 +408,7 @@
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">electangular maintained by <a href="https://github.com/develephant">develephant</a></p>
+        <p class="copyright">electangular.js maintained by <a href="https://github.com/develephant">develephant</a></p>
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
