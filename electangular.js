@@ -1,3 +1,10 @@
+/*
+> electangular.js
+> AngularJS Module for Atom Electron
+> (c)2016 develephant @develephant
+> license MIT
+> version 0.0.1
+*/
 'use strict';
 
 angular.module('electangular', [])

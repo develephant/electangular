@@ -1,10 +1,10 @@
 # electangular.js
 
-## A minimal Angular JS Module for Electron
+## AngularJS Module for Atom Electron
 
-Use __electangular__ in your __[Electron](http://electron.atom.io/)__ apps to easily access Electron based functionality in your __[Angular](https://angularjs.org/)__ code.
+Use __electangular.js__ in your __[Electron](http://electron.atom.io/)__ apps to easily access Electron based functionality in your __[Angular](https://angularjs.org/)__ code.
 
-Some additional service methods for IPC functionality are incorporated, as well as "promise" based `dialog` module methods.
+Some additional service methods for IPC functionality are incorporated, as well as `Promise based `dialog` module methods.
 
 ### Installation
 
@@ -69,7 +69,7 @@ In the code above, when the `doBeep` method is triggered, Electron will make the
 
 The supported Electron modules can be found in the `electron` namespace. Refer to the [Electron documentation](http://electron.atom.io/docs/) for more details on the functionality each module provides.
 
-Because Angular JS runs in the `renderer` process, access to the `main` process is provided via `electron.remote` and all rules for that module apply. ([See `remote` docs.](http://electron.atom.io/docs/api/remote/))
+Because AngularJS runs in the `renderer` process, access to the `main` process is provided via `electron.remote` and all rules for that module apply. ([See `remote` docs.](http://electron.atom.io/docs/api/remote/))
 
 ##### Electron Class Table
 
@@ -128,7 +128,7 @@ function($scope, electron) {
 }]);
 ```
 
-The `dialog` methods use the same signature as shown in the Electron docs, except for the callback. Instead the following methods return a Promise when using __electangular__.
+The `dialog` methods use the same signature as shown in the Electron docs, except for the callback. Instead the following methods return a `Promise` when using __electangular__.
 
   - `showOpenDialog`
   - `showSaveDialog`
@@ -218,7 +218,7 @@ __2. Add the following listener to the `main.js` apps 'ready' event code:__
 app.on('ready', () => {
   ...
 
-  ipcMain.on('electron-msg', (msg) => {
+  ipcMain.on('electron-msg', (event, msg) => {
     //handle incoming message here
     console.log(msg);
 

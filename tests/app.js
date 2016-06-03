@@ -5,7 +5,7 @@ angular.module('app', ['electangular'])
 .controller("MainController", ['$rootScope', '$scope', 'electron', 'ipc',
 function($rootScope, $scope, electron, ipc) {
   $rootScope.$on('electron-msg', (event, msg) => {
-    console.log('page-> ' + msg);
+    console.log('in renderer-> ' + msg);
   });
 
 
@@ -16,7 +16,7 @@ function($rootScope, $scope, electron, ipc) {
   $scope.showOpenDialog = function() {
     electron.dialog.showOpenDialog(null, {
       title: 'Open Me',
-      defaultPath: '~/',
+      defaultPath: '/',
       properties: ['openFile']
     }).then((result) => {
       console.log(result);
@@ -27,8 +27,8 @@ function($rootScope, $scope, electron, ipc) {
 
   $scope.showSaveDialog = function() {
     electron.dialog.showSaveDialog({
-      title: 'Hello',
-      defaultPath: "home",
+      title: 'Save It',
+      defaultPath: "/",
       buttonLabel: 'OK'
     }).then((result) => {
       console.log(result);
@@ -60,6 +60,6 @@ function($rootScope, $scope, electron, ipc) {
   };
 
   $scope.doSomething = function() {
-    ipc.send('Muggy');
+    ipc.send('Muggles');
   }
 }]);
