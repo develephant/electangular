@@ -235,7 +235,8 @@ app.on('ready', () => {
   ...
 
   win = new BrowserWindow(...)
-  //send message
+
+  //send message to renderer
   win.webContents.send('electron-msg', msg);
 })
 ```
@@ -260,7 +261,7 @@ function($rootScope) {
 }]);
 ```
 
-If you prefer to handle the messaging at a central point, you can add the listener to the `run` method of your Angular app:
+If you prefer to handle messaging from a central location, add the listener to the `run` method of your Angular app:
 
 ```js
 'use strict';
@@ -286,4 +287,8 @@ function($rootScope) {
 
 ---
 
-&copy;2016 develephant :elephant:
+__Contributions always welcome. :)__
+
+---
+
+electangular.js | AngularJS Module for Atom Electron | &copy;2016 develephant :elephant:
