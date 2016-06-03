@@ -69,9 +69,9 @@ The supported Electron modules can be found in the `electron` namespace. Refer t
 
 Because AngularJS runs in the `renderer` process, access to the `main` process is provided via `electron.remote` and all rules for that module apply. ([See `remote` docs.](http://electron.atom.io/docs/api/remote/))
 
-##### Electron Class Table
+##### Electron Module Table
 
-|Class|Process|
+|Module|Process|
 |-----|-------|
 |`Accelerator`|Main|
 |`app`|Main|
@@ -79,7 +79,6 @@ Because AngularJS runs in the `renderer` process, access to the `main` process i
 |`BrowserWindow`|Main|
 |`contentTracing`|Main|
 |`dialog`|Main|
-|`DownloadItem`|Main|
 |`globalShortcut`|Main|
 |`Menu`|Main|
 |`MenuItem`|Main|
@@ -90,7 +89,6 @@ Because AngularJS runs in the `renderer` process, access to the `main` process i
 |`systemPreferences`|Main|
 |`Tray`|Main|
 |`desktopCapturer`|Renderer|
-|`ipcRenderer`|Renderer|
 |`webFrame`|Renderer|
 |`clipboard`|Both|
 |`crashReporter`|Both|

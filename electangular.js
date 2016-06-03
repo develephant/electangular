@@ -85,7 +85,6 @@ angular.module('electangular', [])
         return deferred.promise;
       }
     },
-    DownloadItem: remote.DownloadItem,
     globalShortcut: remote.globalShortcut,
     Menu: remote.Menu,
     MenuItem: remote.MenuItem,
@@ -102,7 +101,6 @@ angular.module('electangular', [])
     nativeImage: core.nativeImage,
     process: core.process,
     screen: core.screen,
-    shell: core.shell,
-    ipcRenderer: core.ipcRenderer
+    shell: core.shell
   }
 }]);
