@@ -1,6 +1,6 @@
 # electangular.js
 
-## A minimal Angular JS Module for Electron
+## AngularJS Module for Atom Electron
 
 Use __electangular__ in your __[Electron](http://electron.atom.io/)__ apps to easily access Electron based functionality in your __[Angular](https://angularjs.org/)__ code.
 
