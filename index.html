@@ -73,7 +73,7 @@
 <tbody>
 <tr>
 <td><code>electron</code></td>
-<td>A collection of electron functionality for access within Angular JS.</td>
+<td>A collection of Electron functionality for access within AngularJS.</td>
 </tr>
 <tr>
 <td><code>ipc</code></td>
@@ -108,7 +108,7 @@
 <h4>
 <a id="api" class="anchor" href="#api" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>API</h4>
 
-<p>The supported Electron modules can be found in the <code>electron</code> namespace. Refer to the <a href="http://electron.atom.io/docs/">Electron documentation</a> for more details on the functionality each module provides.</p>
+<p>The supported Electron modules can be found in the <code>electron</code> service namespace. Refer to the <a href="http://electron.atom.io/docs/">Electron documentation</a> for more details on the functionality each module provides.</p>
 
 <p>Because AngularJS runs in the <code>renderer</code> process, access to the <code>main</code> process is provided via <code>electron.remote</code> and all rules for that module apply. (<a href="http://electron.atom.io/docs/api/remote/">See <code>remote</code> docs.</a>)</p>
 
@@ -223,7 +223,7 @@
 <h4>
 <a id="dialog-module-promises" class="anchor" href="#dialog-module-promises" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>dialog</code> Module Promises</h4>
 
-<p>Some Electron methods, like <code>dialog.showMessageBox</code>, use a callback. For Angular we wrap the <code>$q</code> service internally to handle this properly using promises. This requires a slightly different signature for the <code>dialog</code> methods.</p>
+<p>Some Electron methods, like <code>dialog.showMessageBox</code>, use a callback. For Angular, we wrap the <code>$q</code> service to handle this properly using promises. This requires a slightly different signature for the <code>dialog</code> methods.</p>
 
 <div class="highlight highlight-source-js"><pre><span class="pl-k">...</span>
 
@@ -256,7 +256,7 @@
 
 <div class="highlight highlight-source-js"><pre><span class="pl-c">//Do not include a callback</span>
 <span class="pl-smi">dialog</span>.<span class="pl-en">showSaveDialog</span>({ <span class="pl-c">//Set up as usual</span>
-  title<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Open Me<span class="pl-pds">'</span></span>,
+  title<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Save Me<span class="pl-pds">'</span></span>,
   defaultPath<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>home<span class="pl-pds">'</span></span>,
   buttonLabel<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>OK<span class="pl-pds">'</span></span>
 }).<span class="pl-en">then</span>((<span class="pl-smi">result</span>) <span class="pl-k">=&gt;</span> { <span class="pl-c">//Op was successful</span>
@@ -266,7 +266,7 @@
 });</pre></div>
 
 <blockquote>
-<p><strong>Note:</strong> <code>dialog.showErrorBox</code> does not use a callback or Promise.</p>
+<p><strong>Note:</strong> <code>dialog.showErrorBox</code> does not use a callback or <code>Promise</code>.</p>
 </blockquote>
 
 <div class="highlight highlight-source-js"><pre><span class="pl-k">...</span>
