@@ -1,7 +1,5 @@
 # electangular.js
 
-## AngularJS Module for Atom Electron
-
 Use __electangular.js__ in your __[Electron](http://electron.atom.io/)__ apps to easily access Electron based functionality in your __[Angular](https://angularjs.org/)__ code.
 
 Some additional service methods for IPC functionality are incorporated, as well as `Promise based `dialog` module methods.
