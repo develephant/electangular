@@ -34,10 +34,10 @@ angular.module('app', ['electangular']); // welcome to the team
 
 The __electangular__ module exposes two public services that can be used in your Angular project.
 
-|Name|Description|
-|----|-----------|
-|`electron`|A collection of Electron functionality for access within AngularJS.|
-|`ipc`|Facilitates IPC communication between the `main` process and `renderer` process.|
+| Name       | Description                                                                      |
+|:-----------|:---------------------------------------------------------------------------------|
+| `electron` | A collection of Electron functionality for access within AngularJS.              |
+| `ipc`      | Facilitates IPC communication between the `main` process and `renderer` process. |
 
 ---
 
@@ -71,31 +71,31 @@ Because AngularJS runs in the `renderer` process, access to the `main` process i
 
 ##### Electron Module Table
 
-|Module|Process|
-|-----|-------|
-|`Accelerator`|Main|
-|`app`|Main|
-|`autoUpdater`|Main|
-|`BrowserWindow`|Main|
-|`contentTracing`|Main|
-|`dialog`|Main|
-|`globalShortcut`|Main|
-|`Menu`|Main|
-|`MenuItem`|Main|
-|`powerMonitor`|Main|
-|`powerSaveBlocker`|Main|
-|`protocol`|Main|
-|`session`|Main|
-|`systemPreferences`|Main|
-|`Tray`|Main|
-|`desktopCapturer`|Renderer|
-|`webFrame`|Renderer|
-|`clipboard`|Both|
-|`crashReporter`|Both|
-|`nativeImage`|Both|
-|`process`|Both|
-|`screen`|Both|
-|`shell`|Both|
+| Module              | Process  |
+|:--------------------|:---------|
+| `Accelerator`       | Main     |
+| `app`               | Main     |
+| `autoUpdater`       | Main     |
+| `BrowserWindow`     | Main     |
+| `contentTracing`    | Main     |
+| `dialog`            | Main     |
+| `globalShortcut`    | Main     |
+| `Menu`              | Main     |
+| `MenuItem`          | Main     |
+| `powerMonitor`      | Main     |
+| `powerSaveBlocker`  | Main     |
+| `protocol`          | Main     |
+| `session`           | Main     |
+| `systemPreferences` | Main     |
+| `Tray`              | Main     |
+| `desktopCapturer`   | Renderer |
+| `webFrame`          | Renderer |
+| `clipboard`         | Both     |
+| `crashReporter`     | Both     |
+| `nativeImage`       | Both     |
+| `process`           | Both     |
+| `screen`            | Both     |
+| `shell`             | Both     |
 
 ---
 
@@ -181,7 +181,7 @@ dialog.showMessageBox(null, options).then((result) => {
 
 #### `ipc` Service
 
-You can "wire" in your Angular app with the IPC (inter-process communication) system that Electron exposes using the __electangular__ `icp` service.
+You can "wire" in your Angular app with the IPC (inter-process communication) system that Electron exposes using the __electangular__ `ipc` service.
 
 An example of using the `ipc` service in an Angular controller:
 
