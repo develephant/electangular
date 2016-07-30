@@ -181,7 +181,7 @@ dialog.showMessageBox(null, options).then((result) => {
 
 #### `ipc` Service
 
-You can "wire" in your Angular app with the IPC (inter-process communication) system that Electron exposes using the __electangular__ `icp` service.
+You can "wire" in your Angular app with the IPC (inter-process communication) system that Electron exposes using the __electangular__ `ipc` service.
 
 An example of using the `ipc` service in an Angular controller:
 
